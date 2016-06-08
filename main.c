@@ -12,7 +12,9 @@
  circumstances for any damages or loss whatsoever arising from the use
  or inability to use this file or items derived from it.
  ******************************************************************************/
-#include <GLUT/glut.h>
+#include <GL/gl.h>
+#include <GL/glu.h>
+#include <GL/glut.h>
 
 #include <stdio.h>
 #include <stdlib.h>
