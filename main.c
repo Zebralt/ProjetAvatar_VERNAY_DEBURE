@@ -216,8 +216,10 @@ GLvoid initGL()
     glEnable(GL_DEPTH_TEST);
 }
 
+//fonction pour permettre à l'avatar de courir
 void run()
 {
+    //si il est assit
     if (statut == SEAT)
     {
         positionAvatar[1] = positionChaise[1] + 6.1;
@@ -256,6 +258,7 @@ void run()
     statut = RUN;
 }
 
+//fonction pour permettre à l'avatar de marcher
 void walk()
 {
     if (statut == SEAT)
@@ -406,6 +409,7 @@ GLvoid window_key(unsigned char key, int x, int y)
     }
 }
 
+//fonction qui donne un comportement aléatoire à l'avatar en mode automatique
 void doRandomAction()
 {
     timerDerniereAction = time(NULL);
